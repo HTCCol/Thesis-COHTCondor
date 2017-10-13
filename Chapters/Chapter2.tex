@@ -1,0 +1,36 @@
+% Chapter Template
+
+\chapter{Marco teórico} % Main chapter title
+
+\label{Chapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+Este trabajo se enfoca principalmente en el uso de recursos computacionales que se encuentran en un estado ocioso en el campus universitario. Para hacer uso de esos recursos se dispone de un software que controla el envío de trabajos y la ejecución de los mismos en estos equipos, HTCondor, permite el manejo de los recursos, maneja un cluster de equipos de computo, de manera oportunista, haciendo uso de estos en los momentos en que el equipo no esta siendo utilizado.
+%--------------------------------------------------------------
+
+\section{Cluster de computadores}
+Un cluster, es un sistema de procesamiento paralelo o distribuido, que consta de un conjunto de computadoras independientes, interconectadas entre si, de tal manera que funcionan como un solo recurso computacional.
+
+A cada uno de los elementos del cluster se le conoce como \textbf{nodo}, estos cuentan con uno o más procesadores, memoria RAM, Interfaces de red, dispositivos E/S y un sistema operativo, todo interconectados entre si mediante una red de área local (LAN).
+
+Comúnmente entre todas las maquinas del cluster existe una que es llamada el \textbf{nodo-maestro}, que es la encargada de administrar, controlar y monitorear todas las aplicaciones y recursos del sistema, mientras que el resto de nodos están dedicados al procesamiento de datos o a ejecutar operaciones aritméticas, a estos últimos se les conoce como \textbf{worers} o \textbf{nodos-esclavos}.
+
+\subsection*{Clasificación de los clusters}
+
+Los clusters de computadoras se clasifican de acuerdo a sus características.
+\begin{itemize}
+	\item \textbf{Disponibilidad}: En esta categorías se puede contar con clusters \textit{dedicados} y \textit{no-dedicados}, los primeros se destinan a ejecutar un solo trabajo (código, programa o aplicación), en estos los procesadores trabajan en su totalidad en realizar esta tarea. En los segundos los procesadores pueden ser utilizados al tiempo por diferentes trabajos.
+    \item \textbf{Aplicación}: Aquí entran los clusters que ejecutan aplicaciones utilizadas en el cómputo científico, donde lo más importante es obtener un alto desempeño, optimizando el tiempo de procesamiento, es decir, evitando en lo posible demasiado tiempo de CPU en procesos de respaldo y lectura de datos. También en este grupo se encuentran los clusters de alta disponibilidad, donde lo fundamental es que los nodos-esclavos siempre se encuentren funcionando de manera óptima.
+    \item \textbf{Configuración}: Pueden ser homogéneos o heterogéneos, en el caso de los homogéneos todos los nodos cuentan con la misma arquitectura y el mismo sistema operativo, y en los heterogéneos los nodos poseen arquitecturas diferentes y sistemas operativos diferentes.
+\end{itemize}
+
+
+
+\section{Metodología}
+
+Esta actividad tiene como fin obtener la mayor cantidad de información posible referente a manejo e implementación de HTCondor en los diferentes sistemas operativos que utilizaremos, también la documentación de los despliegues e instalaciones que se lleven a cabo, con el fin de analizar los pro y los contras del funcionamiento de HTCondor sobre cada OS utilizado.
+
+Por ello, esta enfocado principalmente a el uso de un cluster oportunista basado en sistemas operativos heterogéneos y diferentes arquitecturas. Para ello se dispondrá de \textit{nodos-esclavos} en equipos con sistema operativo en Windows y un \textit{nodo maestro} con sistema operativo Ubuntu(Linux).
+

@@ -1,0 +1,48 @@
+% Chapter 1
+
+\chapter{Descripción del proyecto} % Main chapter title
+
+\label{Chapter1} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+
+%----------------------------------------------------------------------------------------
+
+% Define some commands to keep the formatting separated from the content 
+\newcommand{\keyword}[1]{\textbf{#1}}
+\newcommand{\tabhead}[1]{\textbf{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\file}[1]{\texttt{\bfseries#1}}
+\newcommand{\option}[1]{\texttt{\itshape#1}}
+
+%----------------------------------------------------------------------------------------
+
+\section{Descripción del problema}
+Tomando en cuenta las soluciones HPC que provee la Universidad tecnológica de Bolívar a sus estudiantes y profesores que están encaminados a la investigación, haciendo uso de la infraestructura actual, que cuenta con 4 servidores de alto procesamiento, \textbf{Spider}, \textbf{Spider01}, \textbf{Spider02}, \textbf{Spider03}, pero que en algunos casos se quedan sin poder llevar a cabo solicitudes para nuevos trabajos.
+
+Para estas nuevas solicitudes existe la necesidad de hacer uso de recursos adicionales con los que cuenta la universidad. A nivel de infraestructura se cuenta con laboratorios donde es posible hacer uso de máquinas de propósito general en estados de ocio, las cuales se pueden agregar a un cluster para poder aprovechar dichos recursos. 
+
+HTCondor, nace como una herramienta de control y despliegue de cluster, lo que permite un mayor manejo sobre las máquinas que hacen parte de este, y sobre las diferentes posibles tareas que se puedan ejecutar en el mismo. La universidad Tecnológica de Bolívar, al ser líder en la implementación de nuevas tecnologías, busca permitir a profesores como a los estudiantes un recurso (cluster) en el cual puedan llevar a cabo tareas de computación de alto desempeño, mostrando así, la capacidad, la infraestructura, y el liderazgo que posee en el campo de las nuevas tecnologías.\\
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+
+\section{Objetivos}
+\subsection{Objetivo General}
+\begin{itemize}
+    \item Desplegar un cluster oportunista anexo al laboratorio de computación de alto desempeño de la Universidad Tecnológica de Bolívar, HPClab para el envío de trabajos de cómputo a diferentes entornos de ejecución, haciendo uso de GPU/CPU disponibles en máquinas en estado de espera en los laboratorios del campus.
+\end{itemize}
+
+\subsection{Objetivos específicos}
+%-----------------------------------
+\begin{itemize}
+    \item Crear una guía para la implementación de un cluster heterogéneo mediante el uso de HTCondor en sistemas operativos Linux, Windows y OSX. \autocite{HTCondor}
+    \item Documentar los casos donde se puede hacer uso del cluster oportunista, y colocar esta información en la Wiki del laboratorio de alto desempeño para que este disponible al alcance de todos.
+\end{itemize}
+
+
+
+
+
+
+
+
